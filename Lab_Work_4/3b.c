@@ -1,22 +1,22 @@
-#include <stdio.h>
-#include<conio.h>
+#include<stdio.h>
+
 int main()
 {
-    int i, space, rownum, k=0;
-    printf("Enter the number of rows : ");
-    scanf("%d", &rownum);
-    for(i=1; i<=rownum; i++)
+    int i, j, k, n;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
     {
-        for(space=1; space<=(rownum-i); space++)
-            printf("  ");
-        while(k!=(2*i-1))
+        for(j=i; j<n; j++)
         {
-            printf("* ");
-            k++;
+            printf(" ");
         }
-        k=0;
+        for(k=1; k<(i*2); k++)
+        {
+            printf("%d",k);
+        }
         printf("\n");
     }
-    getch();
+
     return 0;
 }

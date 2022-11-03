@@ -5,6 +5,8 @@ int main()
 {
         int n,sum,sum1=0,i,j;
 
+        
+        /* For The Pattern The Formula Would Be [{n(n+1)(n+2)}/6] */
         printf("\nEnter value for n = ");
         scanf("%d",&n);
 
